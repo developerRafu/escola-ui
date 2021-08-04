@@ -6,11 +6,11 @@ Aplicação em angular
   - Navegador
 # Iniciando a aplicação
 rode node terminal dentro da pasta da aplicação
-bash
+
 ```
 npm install
 ```
-bash
+
 ```
 ng serve --open
 ```
