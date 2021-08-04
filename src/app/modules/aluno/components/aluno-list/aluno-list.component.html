@@ -1,0 +1,16 @@
+<div *ngIf="alunos.length >= 1">
+    <ul *ngFor="let aluno of alunos" class="list-unstyled">
+            <li class="col-6 col-sm-4 mx-auto mt-3">
+            <app-aluno [aluno]="aluno"></app-aluno>
+        </li>
+    </ul>
+</div>
+<div *ngIf="alunos.length == 0">
+<div class="col-6 col-sm-4 mx-auto mt-3">
+<div class="card">
+    <div class="card-body">
+        <h5>Não existem alunos nesta turma</h5>
+    </div>
+</div>
+</div>
+</div>

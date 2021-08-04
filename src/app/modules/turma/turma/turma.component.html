@@ -1,0 +1,8 @@
+<a [routerLink]="turma.id">
+<div class="card text-center">
+  <h5 class="card-header">Turma - {{turma.nome}}</h5>
+  <ul class="list-group list-group-flush" *ngFor="let g of grau">
+    <li class="list-group-item">{{g.label}}</li>
+  </ul>
+</div>
+</a>

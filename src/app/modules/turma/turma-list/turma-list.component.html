@@ -1,0 +1,16 @@
+<div *ngIf="turmas.length > 0">
+    <ul *ngFor="let turma of turmas" class="list-unstyled">
+        <li class="col-6 col-sm-4 mx-auto mt-3">
+            <app-turma [turma]="turma"></app-turma>
+        </li>
+    </ul>
+</div>
+<div *ngIf="turmas.length == 0">
+    <div class="col-6 col-sm-4 mx-auto mt-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5>Não existe turmas cadastradas</h5>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNxYDSQYCkFPAoM3uXKLwwrEeVZltpa6PVzQ&usqp=CAU"
+      alt="" width="60" height="75">
+    <h1 class="display-5 fw-bold">{{aluno.nome}}</h1>
+    <div class="col-lg-6 mx-auto">
+      <p>Idade: {{aluno.idade}}</p>
+      <p>Turma: {{aluno.turma}}</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a [routerLink]="['edit']" 
+        type="button" class="btn btn-primary btn-lg px-4 gap-3">Alterar dados</a>
+        <button (click)="apagar()" type="button" class="btn btn-outline-secondary btn-lg px-4">Apagar aluno</button>
+      </div>
+    </div>
+  </div>
