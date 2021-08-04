@@ -18,11 +18,12 @@ export class TurmaService {
   }
 
   getPageable(page: number) {
+    console.log(page)
     if (!page) {
       page = 0;
     }
     const params = new HttpParams().append('page', page.toString());
-    return this.http.get<Turma[]>(`${API}/turmas`, {params});
+    return this.http.get<Turma[]>(`${API}/turmas/page`, {params});
   }
 
   save(turmaForm: TurmaForm) {

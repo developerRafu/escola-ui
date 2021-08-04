@@ -5,7 +5,7 @@
         </li>
     </ul>
 </div>
-<div *ngIf="turmas.length == 0">
+<div *ngIf="!hasTurmas">
     <div class="col-6 col-sm-4 mx-auto mt-3">
         <div class="card text-center">
             <div class="card-body">
@@ -13,4 +13,7 @@
             </div>
         </div>
     </div>
+</div>
+<div *ngIf="able" class="d-grid gap-2 col-6 col-sm-4 mx-auto mt-5">
+    <button (click)="loadMore()" class="btn btn-primary btn-large">Carregar turmas</button>
 </div>
