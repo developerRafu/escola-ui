@@ -14,3 +14,4 @@ npm install
 ```
 ng serve --open
 ```
+Rode a api presente em: https://github.com/developerRafu/school-api
