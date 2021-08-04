@@ -5,7 +5,7 @@ Aplicação em angular
   - Node 8 +
   - Navegador
 # Iniciando a aplicação
-rode node terminal dentro da pasta da aplicação
+rode no terminal dentro da pasta da aplicação os comandos:
 
 ```
 npm install
